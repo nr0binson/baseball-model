@@ -1,0 +1,11 @@
+Goal: predict baseball wins more accurately than a vegas bookie.
+
+Overview: train a neural network to accurately predict game outcomes based on some amount of input statistics.
+
+Optional: automatically detect discrepencies between odds and predictions, calculate a ROI for each possible bet.
+
+Methodology:
+
+KISS, start with the minimum thing that works, build from there.
+
+The minimum thing that works is the model itself. Based on some amount of inputs, a model needs to tell us whether team A or team B will win a game, as well as some degree of confidence in this guess. The choice of inputs will have the largest effect on the degree of success that this model has, but starting with the easiest to parse and breakdown stats means that these decisions can be made once the neural network is somewhat in place. Once this "minimum thing that works" is in place, we need to implement a system that measures its success as well so that adjustments to the model can be quantifiably compared. If we do happen across a somewhat accurate model, we can start comparing our predictions to vegas odds, calculating an approximate return on investment for each bet, and see how succesful the model works in real time.
